@@ -24,6 +24,10 @@ allprojects {
     }
 }
 
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
 ext {
     buildToolsVersion = "28.0.3"
     androidxLibVersion = "1.0.0"
